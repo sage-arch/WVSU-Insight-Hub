@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>West Visayas State University</title>
+  <style>
+    /* Phantom blue + dark blue palette */
+    :root {
+      --phantom-blue: #49668d;     /* medium blue */
+      --dark-blue: #1b2a49;        /* dark navy blue */
+      --light-blue-bg: #d9e2ef;    /* very light blue background */
+      --blue-border: #9bb4d6;
+      --text-base: #2f4a7e;
+      --text-dark: #142433;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 0;
+      background: var(--light-blue-bg);
+      color: var(--text-base);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.75rem;
+      color: var(--dark-blue);
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+    }
+
+    p.lead {
+      max-width: 650px;
+      margin: 0 auto 3rem;
+      font-size: 1.125rem;
+      color: var(--text-dark);
+      text-align: center;
+    }
+
+    section {
+      background: white;
+      border: 1px solid var(--blue-border);
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 1px 4px rgba(73, 102, 141, 0.15);
+      transition: box-shadow 0.25s ease;
+    }
+    section:hover {
+      box-shadow: 0 4px 12px rgba(27, 42, 73, 0.25);
+    }
+
+    h2 {
+      color: var(--phantom-blue);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+    }
+
+    /* Icon styling */
+    svg.icon {
+      width: 20px;
+      height: 20px;
+      stroke: var(--phantom-blue);
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    ul.values-list {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      color: var(--text-base);
+    }
+    ul.values-list li {
+      margin-bottom: 0.75rem;
+    }
+
+    ul.campuses-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    ul.campuses-list li {
+      background: var(--light-blue-bg);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      color: var(--dark-blue);
+      font-weight: 500;
+      box-shadow: inset 0 0 6px rgba(73, 102, 141, 0.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      ul.campuses-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>West Visayas State University</h1>
+    <p class="lead">
+      West Visayas State University (WVSU), known as “West,” is a public research university in Iloilo City, Philippines. Founded in 1924 as Iloilo Normal School, its history dates to 1902 within the Philippine normal school system.
+
+    </p>
+
+    <section>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"></circle>
+          <path d="M12 8v4l3 3"></path>
+        </svg>
+        About WVSU
+      </h2>
+      <p>
+        Originally established as Iloilo Normal School, WVSU has grown into a multi-campus university offering diverse programs including medicine, nursing, agriculture, and forestry. The university actively engages in community outreach and environmental conservation efforts, including the Mari-it Wildlife and Conservation Park.
+      </p>
+    </section>
+
+    <section>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 17l4-4 4 4"></path>
+        </svg>
+        Story about the URN
+      </h2>
+      <p>
+        The Urn that extends in a pedestal symbolizes a WVSU that is grand, royal, and majestic. It is a record of our past, a symbol of the present, and an inspiration for the future. It started from a dream that became the Iloilo Normal School, blossomed into a college, and eventually into a university.
+      </p>
+    </section>
+
+    <section>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"></circle>
+          <path d="M12 8v4l3 3"></path>
+        </svg>
+        Vision
+      </h2>
+      <p>A research university advancing quality education towards societal transformation and global recognition.</p>
+    </section>
+
+    <section>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 17l4-4 4 4"></path>
+        </svg>
+        Mission
+      </h2>
+      <p>
+        WVSU is committed to developing lifelong learners empowered to generate knowledge and technology, and to transform communities as proactive agents of change.
+      </p>
+    </section>
+
+    <section>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 13l4 4L19 7"></path>
+        </svg>
+        Core Values
+      </h2>
+      <ul class="values-list">
+        <li><strong>Excellence</strong> – WVSU continually produces quality research and service-oriented professionals.</li>
+        <li><strong>Creativity and Innovation</strong> – The institution is the hub in the development and enhancement of creative works and discovery of innovative ideas.</li>
+        <li><strong>Service</strong> – WVSU commits to provide quality service to student-clients, partner-communities, and organizations to actively participate in national transformation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="7" width="18" height="13" rx="2" ry="2"></rect>
+          <path d="M16 3v4"></path>
+          <path d="M8 3v4"></path>
+          <path d="M3 11h18"></path>
+        </svg>
+        Campuses
+      </h2>
+      <ul class="campuses-list">
+        <li>Main Campus - La Paz, Iloilo City</li>
+        <li>Calinog Campus - Calinog, Iloilo</li>
+        <li>Lambunao Campus - Lambunao, Iloilo</li>
+        <li>Pototan Campus - Pototan, Iloilo</li>
+        <li>Janiuay Campus - Janiuay, Iloilo</li>
+        <li>Himamaylan City Campus - Himamaylan City, Negros Occidental</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
